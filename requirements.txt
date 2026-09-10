@@ -1,0 +1,7 @@
+# Pinned deliberately. The stock browser-use MCP is registered as
+# `uvx --from browser-use[cli]` with no version constraint, so it silently
+# resolves to whatever is latest whenever the uv cache refreshes. Behaviour
+# changing under you mid-session, with nothing in the config to explain it,
+# is not worth the freshness.
+mcp>=1.27.1,<2
+playwright==1.56.0
